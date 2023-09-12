@@ -1,21 +1,39 @@
 import { styled } from "../../theme";
 
 export const StyledNavbar = styled('div', {
+    width: '100%',
+    paddingBlock: '26px',
+    minHeight: '50px',
+
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    width: '50%'
+    justifyContent: 'space-between',
+    alignItems: 'center',
+
 })
 
-export const StyledNavbarItem = styled('a', {
-    textDecoration: 'none',
+export const NavbarList = styled('ul', {
+    display: 'flex',
+    gap: '76px',
+
     fontFamily: '$poppins',
     fontSize: '16px',
     fontWeight: 400,
 
-    cursor: 'pointer',
+    color: 'white',
+    margin: 0,
+    padding: 0,
+    listStyle: 'none'
+})
 
-    '&:hover': {
-        color: '$secondary'
+export const NavbarListItem = styled('li', {
+    'a': {
+        color: 'inherit',
+        textDecoration: 'none',
+        cursor: 'pointer',
+
+        '&:hover': {
+            color: '$secondary'
+        }
     }
 })

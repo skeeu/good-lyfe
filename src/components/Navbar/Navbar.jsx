@@ -1,11 +1,21 @@
-import { StyledNavbar, StyledNavbarItem } from "./StyledNavbar";
+import Logo from "../Logo/Logo";
+import { NavbarList, NavbarListItem, StyledNavbar } from "./StyledNavbar";
 
-const navItems = ['Classes', 'Timetable', 'Clubs', 'Nutrition', 'Free trial']
+const navbarListItems = ['Classes', 'Timetable', 'Clubs', 'Nutrition', 'Free trial']
 
 export default function Navbar() {
     return (
         <StyledNavbar>
-            {navItems.map(item => { return <StyledNavbarItem key={item}>{item}</StyledNavbarItem> })}
+            <Logo size={3} colorOne='white' colorTwo={'$secondary'} />
+            <NavbarList>
+                {navbarListItems.map(item => {
+                    return (<NavbarListItem key={item}>
+                        <a href="#!">
+                            {item}
+                        </a>
+                    </NavbarListItem>)
+                })}
+            </NavbarList>
         </StyledNavbar>
     )
 }
