@@ -1,23 +1,25 @@
-import Section from '../../UI/Section/Section';
-import MYNBPhotos from './MYNBPhotos';
-import { GridСontainer } from '../../UI/Grid/GridСontainer';
 import GridSideContent from '../../UI/Grid/GridSideContent';
+import Section from '../../UI/Section/Section';
+import { GridСontainer } from '../../UI/Grid/GridСontainer';
+import PremiumFacilitiesPhotos from './PremiumFacilitiesPhotos';
 
-export default function MYNB() {
+function PremiumFacilities() {
     return (
         <Section>
             <GridСontainer>
-                <MYNBPhotos />
                 <GridSideContent
-                    headingValue="Meet your new body"
-                    buttonValue="View the FAQ"
+                    headingValue="Premium Facilities"
+                    buttonValue="Learn more"
                 >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Vivamus eget lectus urna. Nulla magna tortor, bibendum in
                     molestie sed, gravida nec felis. Sed id egestasegestas
                     risus, ut imperdiet augue.
                 </GridSideContent>
+                <PremiumFacilitiesPhotos />
             </GridСontainer>
         </Section>
     );
 }
+
+export default PremiumFacilities;
