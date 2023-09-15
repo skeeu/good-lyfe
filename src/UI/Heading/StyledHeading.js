@@ -1,4 +1,4 @@
-import { styled } from "../../theme";
+import { styled } from '../../theme';
 
 export const StyledHeading = styled('h1', {
     margin: 0,
@@ -9,21 +9,24 @@ export const StyledHeading = styled('h1', {
     variants: {
         size: {
             1: {
-                fontSize: '70px'
+                fontSize: '70px',
             },
             2: {
-                fontSize: '48px'
+                fontSize: '48px',
             },
             3: {
-                fontSize: '40px'
+                fontSize: '40px',
             },
             4: {
-                fontSize: '38px'
-            }
-        }
+                fontSize: '38px',
+            },
+            5: {
+                fontSize: '18px',
+            },
+        },
     },
 
     defaultVariants: {
-        size: 1
-    }
-})
+        size: 1,
+    },
+});

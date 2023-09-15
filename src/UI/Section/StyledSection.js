@@ -19,7 +19,6 @@ export const SectionContent = styled('div', {
     justifyContent: 'center',
     alignItems: 'center',
 
-    lineHeight: '400%',
     textAlign: 'center',
     fontStyle: 'normal',
 });
