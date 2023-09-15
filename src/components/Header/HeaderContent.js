@@ -1,4 +1,7 @@
-import { SectionContent } from '../../UI/Section/StyledSection';
+import {
+    SectionContent,
+    SectionContentInner,
+} from '../../UI/Section/StyledSection';
 import { styled } from '../../theme';
 
 export const HeaderWrapper = styled('div', {
@@ -19,5 +22,12 @@ export const HeaderWrapper = styled('div', {
             backgroundRepeat: 'no-repeat',
             zIndex: 2,
         },
+    },
+    [`& ${SectionContentInner}`]: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: '24px',
     },
 });

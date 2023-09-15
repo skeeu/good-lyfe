@@ -21,12 +21,14 @@ function GridSideContent({ headingValue, buttonValue, children }) {
                 {headingValue}
             </Heading>
             <span>{children}</span>
-            <Button
-                variant="secondary"
-                css={{ width: '236px' }}
-            >
-                {buttonValue}
-            </Button>
+            {buttonValue && (
+                <Button
+                    variant="secondary"
+                    css={{ width: '236px' }}
+                >
+                    {buttonValue}
+                </Button>
+            )}
         </Box>
     );
 }

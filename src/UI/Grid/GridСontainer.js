@@ -5,7 +5,8 @@ export const GridСontainer = styled('div', {
     width: '100%',
 
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
+    gridTemplateColumns: '50% 50%',
+    gridTemplateRows: '100%',
     alignItems: 'center',
     justifyItems: 'center',
     textAlign: 'left',

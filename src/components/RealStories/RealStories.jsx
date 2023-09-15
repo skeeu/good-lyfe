@@ -54,11 +54,6 @@ function RealStories() {
                         );
                     })}
                 </StoryList>
-                {/* <StoryCard headingText="3Kg Lost!">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus eget lectus urna. Nulla magna tortor, bibendum in
-                    molestie sed, gravida nec felis. Sed id egestasegestas risu.
-                </StoryCard> */}
             </Section>
         </RealStoriesWrapper>
     );
