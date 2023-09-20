@@ -1,4 +1,4 @@
-import { createStitches } from '@stitches/react'
+import { createStitches } from '@stitches/react';
 
 export const { styled, css } = createStitches({
     theme: {
@@ -12,30 +12,31 @@ export const { styled, css } = createStitches({
             gray3: '#858585',
             gray4: '#D2D2D2',
             gray5: '#EDEDED',
-            gray6: '#EFF0F6'
+            gray6: '#EFF0F6',
         },
         space: {},
         fontSizes: {},
         fonts: {
-            poppins: 'Poppins, sans-serif'
+            poppins: 'Poppins, sans-serif',
         },
         fontWeights: {
             black: 800,
             extraBold: 700,
-            semiBold: 600
+            semiBold: 600,
         },
         sizes: {},
         borderWidths: {},
         borderStyles: {},
         radii: {},
         shadows: {
-            secondary: '$colors$secondary'
+            secondary: '$colors$secondary',
         },
         zIndices: {},
         transitions: {},
     },
     media: {
-        desktop: '(min-width: 1440px)',
+        desktop: '(min-width: 1280px)',
+        tablets: '(min-width: 768px)',
         mobile: '(min-width: 320px)',
-    }
+    },
 });

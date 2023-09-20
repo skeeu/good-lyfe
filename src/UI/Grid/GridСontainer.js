@@ -4,10 +4,9 @@ export const GridСontainer = styled('div', {
     height: '100%',
     width: '100%',
 
-    display: 'grid',
-    gridTemplateColumns: '50% 50%',
-    gridTemplateRows: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     alignItems: 'center',
-    justifyItems: 'center',
     textAlign: 'left',
 });

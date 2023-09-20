@@ -1,6 +1,6 @@
 import { Box } from '../Box/Box';
-import Button from '../Button/Button';
-import Heading from '../Heading/Heading';
+import Button from '../../components/Button';
+import { Heading } from '../../styles/Heading.styled';
 
 function GridSideContent({ headingValue, buttonValue, children }) {
     return (

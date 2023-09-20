@@ -1,28 +1,29 @@
-import { styled } from '../../theme';
+import styled from 'styled-components';
 
-export const SectionWrapper = styled('div', {
-    minHeight: '100lvh',
-    height: '1px',
-    width: '100%',
-});
+export const SectionWrapper = styled.div`
+    min-height: 100lvh;
+    height: 1px;
+    width: 100%;
 
-export const SectionContent = styled('div', {
-    width: '100%',
-    height: '100%',
+    display: flex;
+    flex-direction: column;
+`;
 
-    backgroundSize: 'cover',
-    backgroundPosition: '100% 20%',
+export const SectionContent = styled.div`
+    width: 100%;
+    flex: 1;
 
-    position: 'relative',
+    background-size: cover;
+    position: relative;
 
-    textAlign: 'center',
-    fontStyle: 'normal',
-});
+    text-align: center;
+    font-style: normal;
+`;
 
-export const SectionContentInner = styled('div', {
-    width: '100%',
-    height: '100%',
+export const SectionContentInner = styled.div`
+    width: 100%;
+    height: 100%;
 
-    position: 'relative',
-    zIndex: 2,
-});
+    position: relative;
+    z-index: 2;
+`;

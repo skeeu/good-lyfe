@@ -1,10 +1,10 @@
-import Heading from '../../UI/Heading/Heading';
 import { SocialWrapper } from './StyledSocial';
 import { FaFacebookF } from 'react-icons/fa';
 import { ImYoutube2 } from 'react-icons/im';
 import { AiOutlineInstagram } from 'react-icons/ai';
-import Button from '../../UI/Button/Button';
+import Button from '../Button';
 import { Box } from '../../UI/Box/Box';
+import { Heading } from '../../styles/Heading.styled';
 
 const icons = [
     <FaFacebookF style={{ width: '32px', height: '32px' }} />,

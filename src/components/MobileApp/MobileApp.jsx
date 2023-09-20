@@ -1,8 +1,8 @@
 import { Box } from '../../UI/Box/Box';
 import GridSideContent from '../../UI/Grid/GridSideContent';
 import { GridСontainer } from '../../UI/Grid/GridСontainer';
-import Heading from '../../UI/Heading/Heading';
 import { Subhead } from '../../UI/Subhead/Subhead';
+import { Heading } from '../../styles/Heading.styled';
 import { MobileAppWrapper } from './StyledMobileApp';
 
 function MobileApp() {

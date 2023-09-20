@@ -1,8 +1,8 @@
-import Heading from '../../UI/Heading/Heading';
 import Section from '../../UI/Section/Section';
 import StoryCard from '../../UI/StoryCard/StoryCard';
 import { StoryList } from '../../UI/StoryCard/StyledStoryCard';
 import { Subhead } from '../../UI/Subhead/Subhead';
+import { Heading } from '../../styles/Heading.styled';
 import { RealStoriesWrapper } from './RealStoriesWrapper';
 
 const stories = [

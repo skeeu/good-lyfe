@@ -8,20 +8,24 @@ import RealStories from './components/RealStories/RealStories';
 import Section from './UI/Section/Section';
 import MobileApp from './components/MobileApp/MobileApp';
 import Social from './components/Social/Social';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './styles/theme';
 
 function App() {
     return (
-        <Theme>
-            <Header />
-            <MYNB />
-            <BecomeMore />
-            <PremiumFacilities />
-            <RealStories />
-            <Section>
+        <ThemeProvider theme={theme}>
+            <Theme>
+                <Header />
+                {/* <MYNB /> */}
+                <BecomeMore />
+                {/* <PremiumFacilities /> */}
+                {/* <RealStories /> */}
+                {/* <Section>
                 <MobileApp />
                 <Social />
-            </Section>
-        </Theme>
+            </Section> */}
+            </Theme>
+        </ThemeProvider>
     );
 }
 

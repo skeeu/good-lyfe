@@ -1,5 +1,5 @@
+import { Heading } from '../../styles/Heading.styled';
 import { Box } from '../Box/Box';
-import Heading from '../Heading/Heading';
 import CitationSign from './CitationSign';
 import {
     StoryCardAva,

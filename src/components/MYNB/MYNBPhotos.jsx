@@ -2,24 +2,24 @@ import { Box } from '../../UI/Box/Box';
 
 function MYNBPhotos() {
     return (
-        <Box css={{ position: 'relative' }}>
+        <Box
+            css={{
+                position: 'relative',
+                flex: 1,
+            }}
+        >
             <img
                 style={{
-                    position: 'relative',
-                    width: '350px',
-                    height: '400px',
-                    objectFit: 'cover',
+                    width: '75%',
+                    height: 'auto',
                 }}
                 src="../../assets/2.jpg"
             />
             <img
                 style={{
                     position: 'absolute',
-                    width: '240px',
-                    height: '359px',
-                    right: '-90px',
-                    bottom: '-100px',
-                    objectFit: 'cover',
+                    width: 'auto',
+                    height: '100%',
                 }}
                 src="../../assets/1.jpg"
             />
