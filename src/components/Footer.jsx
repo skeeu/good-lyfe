@@ -55,7 +55,7 @@ function Footer() {
                                     {el.items.map((link, i) => {
                                         return (
                                             <li key={i}>
-                                                <a href="">{link}</a>
+                                                <a href="#">{link}</a>
                                             </li>
                                         );
                                     })}
@@ -67,18 +67,18 @@ function Footer() {
                         <Heading>Reach us</Heading>
                         <FooterList>
                             <li>
-                                <a href="">
+                                <a href="#">
                                     <IoMdMail /> admin@goodlyfe.co
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="#">
                                     {' '}
                                     <MdPhoneInTalk /> +88 98765 43210
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="#">
                                     <HiLocationMarker /> 90210 Beverly Hills
                                     California USA
                                 </a>
@@ -90,16 +90,16 @@ function Footer() {
                     <div>© 2020 GoodLyfe. All rights reserved</div>
                     <ul>
                         <li>
-                            <a href="">Terms & Conditions</a>
+                            <a href="#">Terms & Conditions</a>
                         </li>
                         <li>
-                            <a href="">Privacy Policy</a>
+                            <a href="#">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="">Sitemap</a>
+                            <a href="#">Sitemap</a>
                         </li>
                         <li>
-                            <a href="">Disclaimer</a>
+                            <a href="#">Disclaimer</a>
                         </li>
                     </ul>
                 </SubFooter>

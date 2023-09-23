@@ -47,3 +47,8 @@ export const StoryCardPersonBox = styled.div`
     flex-direction: row;
     gap: 17px;
 `;
+
+export const StoryCardDescription = styled.div`
+    display: flex;
+    flex-direction: column;
+`;

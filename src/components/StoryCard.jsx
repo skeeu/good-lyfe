@@ -2,6 +2,7 @@ import { Heading } from '../styles/Heading.styled';
 import {
     StoryCardAva,
     StoryCardContent,
+    StoryCardDescription,
     StoryCardPersonBox,
     StoryCardTextBox,
     StoryCardWrapper,
@@ -22,18 +23,17 @@ function StoryCard({ headingText, person, children }) {
                 <StoryCardTextBox>{children}</StoryCardTextBox>
                 <StoryCardPersonBox>
                     <StoryCardAva src={person.ava} />
-                    <div>
+                    <StoryCardDescription>
                         <Heading
                             color="#424242"
-                            style={{ display: 'inline' }}
                             size={5}
                         >
                             {person.name}
                         </Heading>
-                        <div style={{ color: '#969BAB', display: 'inline' }}>
+                        <div style={{ color: '#969BAB' }}>
                             {person.description}
                         </div>
-                    </div>
+                    </StoryCardDescription>
                 </StoryCardPersonBox>
             </StoryCardContent>
         </StoryCardWrapper>

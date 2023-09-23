@@ -1,13 +1,9 @@
-import { useState } from 'react';
 import { OpenMenuButton, StyledHeaderTop } from '../../styles/Header.styled';
 import { NavbarListItem, StyledNavLinks } from '../../styles/NavLinks.styled';
 import Logo from '../Logo';
+import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx';
 
-const navLinks = ['Classes', 'Timetable', 'Clubs', 'Nutrition', 'Free trial'];
-
-function HeaderTop() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+function HeaderTop({ navLinks, isMenuOpen, setIsMenuOpen }) {
     return (
         <StyledHeaderTop>
             <Logo />
@@ -15,13 +11,14 @@ function HeaderTop() {
                 {navLinks.map((item) => {
                     return (
                         <NavbarListItem key={item}>
-                            <a href="#!">{item}</a>
+                            <a href="#">{item}</a>
                         </NavbarListItem>
                     );
                 })}
             </StyledNavLinks>
-            <OpenMenuButton variant="text">asd</OpenMenuButton>
-            {/* <ExtendedNavLinks navLinks={navLinks} /> */}
+            <OpenMenuButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                {isMenuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
+            </OpenMenuButton>
         </StyledHeaderTop>
     );
 }

@@ -5,7 +5,7 @@ import RealStories from './components/RealStories';
 import MobileApp from './components/MobileApp';
 import Social from './components/Social';
 import { ThemeProvider } from 'styled-components';
-import { theme } from './styles/theme';
+import { theme } from './theme';
 import { GlobalStyle } from './styles/Global.styled';
 import BecomeMore from './components/BecomeMore';
 import Footer from './components/Footer';

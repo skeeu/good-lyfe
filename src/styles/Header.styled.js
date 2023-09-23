@@ -6,10 +6,13 @@ import { StyledButton } from './Button.styled';
 export const StyledHeaderTop = styled.div`
     --header-y-padding: 32px;
     --header-x-padding: 36px;
-    --header-height: 100px;
 
     width: 100%;
     max-height: var(--header-height);
+
+    position: fixed;
+    z-index: 9999;
+
     padding: var(--header-y-padding) var(--header-x-padding);
 
     background-color: ${({ theme }) => theme.colors.primary};
@@ -31,6 +34,8 @@ export const StyledHeaderTop = styled.div`
 `;
 
 export const HeaderWrapper = styled(SectionWrapper)`
+    --header-height: 100px;
+
     color: white;
 
     height: 100lvh;
@@ -52,6 +57,9 @@ export const HeaderWrapper = styled(SectionWrapper)`
         z-index: 2;
     }
 
+    @media (max-width: ${({ theme }) => theme.media.md}) {
+        --header-height: 56px;
+    }
     @media (min-width: ${({ theme }) => theme.media.xl}) {
         background-position: 100% 0%;
     }
@@ -92,8 +100,16 @@ export const HeaderInner = styled.div`
     }
 `;
 
-export const OpenMenuButton = styled.button`
+export const OpenMenuButton = styled.div`
     display: none;
+
+    width: 32px;
+    height: 32px;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
 
     @media (max-width: ${({ theme }) => theme.media.md}) {
         display: block;

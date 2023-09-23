@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     html, body {
         height: 100%;
+        font-family: ${({ theme }) => theme.fonts.poppins};
     }
     #root {
       height: 100%;
