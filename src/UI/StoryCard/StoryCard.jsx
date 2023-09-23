@@ -13,7 +13,7 @@ function StoryCard({ headingText, person, children }) {
     return (
         <StoryCardWrapper>
             <Heading
-                color="$primary"
+                color="primary"
                 size={4}
             >
                 {headingText}
@@ -31,7 +31,6 @@ function StoryCard({ headingText, person, children }) {
                         >
                             {person.name}
                         </Heading>
-                        <br />
                         <Box css={{ color: '#969BAB', display: 'inline' }}>
                             {person.description}
                         </Box>

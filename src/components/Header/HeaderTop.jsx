@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { OpenMenuButton, StyledHeaderTop } from '../../styles/Header.styled';
 import { NavbarListItem, StyledNavLinks } from '../../styles/NavLinks.styled';
 import Logo from '../Logo';
-import Button from '../Button';
 
 const navLinks = ['Classes', 'Timetable', 'Clubs', 'Nutrition', 'Free trial'];
 
@@ -11,7 +10,7 @@ function HeaderTop() {
 
     return (
         <StyledHeaderTop>
-            <Logo size={4} />
+            <Logo />
             <StyledNavLinks>
                 {navLinks.map((item) => {
                     return (

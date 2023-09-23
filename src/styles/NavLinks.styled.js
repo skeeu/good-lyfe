@@ -13,7 +13,7 @@ export const StyledNavLinks = styled.ul`
     padding: 0;
     list-style: none;
 
-    @media (max-width: ${({ theme }) => theme.media.tablets}) {
+    @media (max-width: ${({ theme }) => theme.media.md}) {
         display: none;
     }
 `;

@@ -1,55 +1,49 @@
-import { styled } from '../../theme';
+import styled from 'styled-components';
 
-export const StoryList = styled('div', {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'stretch',
-    gap: '30px',
-});
+export const StoryCardWrapper = styled.div`
+    min-height: 100%;
 
-export const StoryCardWrapper = styled('div', {
-    maxWidth: '350px',
-    borderRadius: 10,
-    background: '#FFF',
-    boxShadow: '1px 4px 8px 0px rgba(0, 0, 0, 0.18)',
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.18);
 
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '20px',
-    textAlign: 'start',
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
 
-    padding: '35px 32px',
-});
+    padding: 35px 32px;
+`;
 
-export const StoryCardContent = styled('div', {
-    height: '100%',
-    display: 'grid',
-    gridTemplateColumns: 'auto 1fr',
-    gridTemplateRows: '1fr auto',
-    gridGap: '14px',
-});
+export const StoryCardContent = styled.div`
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 14px;
+`;
 
-export const StoryCardTextBox = styled('div', {
-    color: '#424242',
-    fontSize: '18px',
-    fontStyle: 'normal',
-    fontWeight: 400,
-    lineHeight: '32px',
-});
+export const StoryCardTextBox = styled.div`
+    color: #424242;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+`;
 
-export const StoryCardAva = styled('img', {
-    width: '58px',
-    height: '58px',
+export const StoryCardAva = styled.img`
+    width: 58px;
+    height: 58px;
 
-    borderRadius: '99999px',
+    border-radius: 99999px;
 
-    objectFit: 'cover',
-});
+    object-fit: cover;
+`;
 
-export const StoryCardPersonBox = styled('div', {
-    gridColumn: 2,
+export const StoryCardPersonBox = styled.div`
+    grid-column: 2;
 
-    display: 'flex',
-    flexDirection: 'row',
-    gap: '17px',
-});
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+`;

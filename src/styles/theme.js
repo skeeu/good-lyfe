@@ -20,8 +20,8 @@ export const theme = {
         semiBold: 600,
     },
     media: {
-        desktop: '1280px',
-        tablets: '768px',
-        mobile: '320px',
+        xl: '1280px',
+        md: '768px',
+        sm: '400px',
     },
 };

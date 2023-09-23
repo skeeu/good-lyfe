@@ -1,12 +1,14 @@
-import Button from '../Button';
-import Section from '../../UI/Section/Section';
-import { BecomeMoreWrapper } from './BecomeMoreWrapper';
-import { Heading } from '../../styles/Heading.styled';
+import Button from './Button';
+import { Heading } from '../styles/Heading.styled';
+import { BecomeMoreWrapper } from '../styles/BecomeMore.styled';
+import { SectionContent } from '../styles/Section.styled';
+import { Fade } from '../styles/Fade.styled';
 
 export default function BecomeMore() {
     return (
         <BecomeMoreWrapper>
-            <Section isContentFaded>
+            <Fade />
+            <SectionContent>
                 <Heading size={1}>Become more than you are.</Heading>
                 <span>
                     Staying active is great fun and keeps you healthy. <br />{' '}
@@ -18,7 +20,7 @@ export default function BecomeMore() {
                 >
                     Let’s do it!
                 </Button>
-            </Section>
+            </SectionContent>
         </BecomeMoreWrapper>
     );
 }

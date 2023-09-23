@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledButton = styled.button`
     border-radius: 9999px;
 
-    padding: 24px 32px;
+    padding: 1.5em 1.5em;
 
     border: none;
     outline: none;

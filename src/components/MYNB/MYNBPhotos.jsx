@@ -1,29 +1,32 @@
-import { Box } from '../../UI/Box/Box';
+import { SidePhotos, SidePhotosInner } from '../../styles/SidePhotos.styled';
 
 function MYNBPhotos() {
     return (
-        <Box
-            css={{
-                position: 'relative',
-                flex: 1,
-            }}
-        >
-            <img
-                style={{
-                    width: '75%',
-                    height: 'auto',
-                }}
-                src="../../assets/2.jpg"
-            />
-            <img
-                style={{
-                    position: 'absolute',
-                    width: 'auto',
-                    height: '100%',
-                }}
-                src="../../assets/1.jpg"
-            />
-        </Box>
+        <SidePhotos>
+            <SidePhotosInner>
+                <img
+                    style={{
+                        width: '75%',
+                        height: '75%',
+                        objectFit: 'cover',
+                        position: 'absolute',
+                        left: 0,
+                    }}
+                    src="../../assets/2.jpg"
+                />
+                <img
+                    style={{
+                        width: '55%',
+                        height: '75%',
+                        objectFit: 'cover',
+                        position: 'absolute',
+                        bottom: 0,
+                        right: 0,
+                    }}
+                    src="../../assets/1.jpg"
+                />
+            </SidePhotosInner>
+        </SidePhotos>
     );
 }
 
