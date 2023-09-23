@@ -1,9 +1,6 @@
-import { Subhead } from '../../UI/Subhead/Subhead';
-import { Heading } from '../../styles/Heading.styled';
-import {
-    MobileAppInner,
-    MobileAppWrapper,
-} from '../../styles/MobileApp.styled';
+import { Heading } from '../styles/Heading.styled';
+import { MobileAppInner, MobileAppWrapper } from '../styles/MobileApp.styled';
+import { Subhead } from '../styles/Subhead.styled';
 
 function MobileApp() {
     return (

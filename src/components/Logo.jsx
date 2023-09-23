@@ -1,11 +1,12 @@
 import { Heading } from '../styles/Heading.styled';
 import { StyledLogo } from '../styles/Logo.styled';
 
-export default function Logo({ colorOne, colorTwo }) {
+export default function Logo({ colorOne, colorTwo, ...rest }) {
     return (
         <StyledLogo
-            $colorOne={colorOne}
-            $colorTwo={colorTwo}
+            {...rest}
+            colorOne={colorOne}
+            colorTwo={colorTwo}
         >
             <Heading>Good</Heading>
             <Heading>lyfe</Heading>

@@ -13,6 +13,7 @@ export const StyledLogo = styled.div`
         color: ${({ colorOne }) => colorOne || 'white'};
     }
     & :nth-child(2) {
-        color: ${({ colorTwo, theme }) => colorTwo || theme.colors.secondary};
+        color: ${({ colorTwo, theme }) =>
+            theme.colors[colorTwo] || colorTwo || theme.colors.secondary};
     }
 `;

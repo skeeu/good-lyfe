@@ -1,15 +1,15 @@
 import StoryCard from './StoryCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Subhead } from '../UI/Subhead/Subhead';
 import { Heading } from '../styles/Heading.styled';
 import {
     RealStoriesContainer,
     RealStoriesContent,
     RealStoriesWrapper,
 } from '../styles/RealStories.styled';
+import { Subhead } from '../styles/Subhead.styled';
 
 const stories = [
     {

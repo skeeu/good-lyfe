@@ -1,5 +1,4 @@
 import { Heading } from '../styles/Heading.styled';
-import { Box } from '../UI/Box/Box';
 import {
     StoryCardAva,
     StoryCardContent,
@@ -23,18 +22,18 @@ function StoryCard({ headingText, person, children }) {
                 <StoryCardTextBox>{children}</StoryCardTextBox>
                 <StoryCardPersonBox>
                     <StoryCardAva src={person.ava} />
-                    <Box>
+                    <div>
                         <Heading
                             color="#424242"
-                            css={{ display: 'inline' }}
+                            style={{ display: 'inline' }}
                             size={5}
                         >
                             {person.name}
                         </Heading>
-                        <Box css={{ color: '#969BAB', display: 'inline' }}>
+                        <div style={{ color: '#969BAB', display: 'inline' }}>
                             {person.description}
-                        </Box>
-                    </Box>
+                        </div>
+                    </div>
                 </StoryCardPersonBox>
             </StoryCardContent>
         </StoryCardWrapper>
