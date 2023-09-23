@@ -1,13 +1,13 @@
-import { Heading } from '../../styles/Heading.styled';
-import { Box } from '../Box/Box';
-import CitationSign from './CitationSign';
+import { Heading } from '../styles/Heading.styled';
+import { Box } from '../UI/Box/Box';
 import {
     StoryCardAva,
     StoryCardContent,
     StoryCardPersonBox,
     StoryCardTextBox,
     StoryCardWrapper,
-} from './StyledStoryCard';
+} from '../styles/StoryCard.styled';
+import { CitationSign } from '../styles/CitationSign.styled';
 
 function StoryCard({ headingText, person, children }) {
     return (
@@ -19,7 +19,7 @@ function StoryCard({ headingText, person, children }) {
                 {headingText}
             </Heading>
             <StoryCardContent>
-                <CitationSign />
+                <CitationSign>“</CitationSign>
                 <StoryCardTextBox>{children}</StoryCardTextBox>
                 <StoryCardPersonBox>
                     <StoryCardAva src={person.ava} />

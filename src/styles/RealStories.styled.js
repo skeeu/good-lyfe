@@ -11,6 +11,8 @@ export const RealStoriesContent = styled(SectionContent)`
     justify-content: center;
     align-items: center;
     gap: 24px;
+
+    padding-block: 10%;
 `;
 
 export const RealStoriesContainer = styled.div`

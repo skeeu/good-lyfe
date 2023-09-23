@@ -1,7 +1,8 @@
-import StoryCard from '../UI/StoryCard/StoryCard';
+import StoryCard from './StoryCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode } from 'swiper/modules';
+import { FreeMode, Pagination } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/pagination';
 import { Subhead } from '../UI/Subhead/Subhead';
 import { Heading } from '../styles/Heading.styled';
 import {
@@ -57,8 +58,11 @@ function RealStories() {
                         slidesPerView={'auto'}
                         centeredSlides={true}
                         spaceBetween={'12px'}
-                        freeMode={true}
-                        modules={[FreeMode]}
+                        pagination={{
+                            clickable: true,
+                            dynamicBullets: true,
+                        }}
+                        modules={[Pagination]}
                         className="swiper-cards"
                         style={{ width: '100%' }}
                     >

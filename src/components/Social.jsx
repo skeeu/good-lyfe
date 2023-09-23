@@ -1,29 +1,22 @@
-import { SocialWrapper } from './StyledSocial';
 import { FaFacebookF } from 'react-icons/fa';
 import { ImYoutube2 } from 'react-icons/im';
 import { AiOutlineInstagram } from 'react-icons/ai';
-import Button from '../Button';
-import { Box } from '../../UI/Box/Box';
-import { Heading } from '../../styles/Heading.styled';
+import Button from './Button';
+import { Heading } from '../styles/Heading.styled';
+import { IconsContainer, SocialWrapper } from '../styles/Social.styled';
 
-const icons = [
-    <FaFacebookF style={{ width: '32px', height: '32px' }} />,
-    <ImYoutube2 style={{ width: '32px', height: '32px' }} />,
-    <AiOutlineInstagram style={{ width: '32px', height: '32px' }} />,
-];
+const icons = [<FaFacebookF />, <ImYoutube2 />, <AiOutlineInstagram />];
 
 function Social() {
     return (
         <SocialWrapper>
             <Heading
-                color="$primary"
+                color="primary"
                 size={2}
             >
                 Social
             </Heading>
-            <Box
-                css={{ display: 'flex', gap: '90px', justifyContent: 'center' }}
-            >
+            <IconsContainer>
                 {icons.map((icon, i) => {
                     return (
                         <Button
@@ -35,7 +28,7 @@ function Social() {
                         </Button>
                     );
                 })}
-            </Box>
+            </IconsContainer>
         </SocialWrapper>
     );
 }
