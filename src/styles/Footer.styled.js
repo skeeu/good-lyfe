@@ -81,7 +81,7 @@ export const FooterList = styled.ul`
 export const SubFooter = styled.div`
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     gap: 30px;
 
@@ -102,5 +102,9 @@ export const SubFooter = styled.div`
     li + li:before {
         padding: 4px;
         content: '|';
+    }
+
+    @media (max-width: ${({ theme }) => theme.media.md}) {
+        justify-content: center;
     }
 `;
